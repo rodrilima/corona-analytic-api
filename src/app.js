@@ -1,22 +1,16 @@
 require("dotenv/config");
 const express = require("express");
+require("express-async-errors");
 const routes = require("./routes");
-var mongoose = require("mongoose");
+require("./database");
+const Youch = require("youch");
 
 class App {
   constructor() {
     this.server = express();
 
-    this.database();
     this.middlewares();
     this.routes();
-  }
-
-  database() {
-    mongoose.connect(process.env.MONGODB_URL, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true
-    });
   }
 
   middlewares() {
@@ -25,10 +19,16 @@ class App {
         extended: true
       })
     );
+    this.server.use(express.json());
   }
 
   routes() {
     this.server.use(routes);
+    this.server.use(async (err, req, res, next) => {
+      const errors = await new Youch(err, req).toJSON();
+      console.log(errors);
+      return res.json({ message: error });
+    });
   }
 }
 

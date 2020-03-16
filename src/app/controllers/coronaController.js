@@ -1,19 +1,14 @@
+const mds = require("../../libs/mds");
+
 class coronaController {
-  constructor(model) {
-    this.model = model;
-  }
   async index(req, res) {
-    const data = await this.model.find({});
+    const data = await mds.get();
     return res.json(data);
   }
   async save(req, res) {
-    const model = new this.model(req.body);
-    if (!model) {
-      return res.json(model);
-    }
-    const response = await model.save();
-    return res.json(response);
+    const data = await mds.save();
+    return res.json(data);
   }
 }
 
-module.exports = coronaController;
+module.exports = new coronaController();

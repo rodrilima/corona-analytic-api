@@ -1,10 +1,9 @@
 const routes = require("express").Router();
 
-const countryController = require("./app/controllers/countryController");
-const stateController = require("./app/controllers/stateController");
+const coronaController = require("./app/controllers/coronaController");
 
-routes.get("/", countryController.index.bind(countryController));
-routes.get("/brazil", stateController.index.bind(stateController));
-// routes.get("/save", countryController.save);
+routes.get("/", coronaController.index);
+
+routes.use((req, res) => res.json({ message: "404 - Not found" }));
 
 module.exports = routes;

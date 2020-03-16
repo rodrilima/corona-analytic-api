@@ -4,11 +4,17 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon src/server.js"
+    "start": "pm2 start src/server.js",
+    "dev": "nodemon src/server.js"
   },
   "dependencies": {
+    "cron": "^1.8.2",
+    "csvtojson": "^2.0.10",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "mongoose": "^5.9.4"
+    "express-async-errors": "^3.1.1",
+    "mongoose": "^5.9.4",
+    "request": "^2.88.2",
+    "youch": "^2.0.10"
   }
 }
