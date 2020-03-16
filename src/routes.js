@@ -4,6 +4,6 @@ const coronaController = require("./app/controllers/coronaController");
 
 routes.get("/", coronaController.index);
 
-routes.use((req, res) => res.json({ message: "404 - Not found" }));
+routes.use((req, res) => res.status(404).json({ message: "Not found" }));
 
 module.exports = routes;
