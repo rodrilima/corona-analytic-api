@@ -50,7 +50,7 @@ https://api.coronaanalytic.com/world
 https://api.coronaanalytic.com/brazil/35
 ```
 
-### Get Canada content (uid: CN)
+### Get China content (uid: CN)
 
 ```
 https://api.coronaanalytic.com/world/CN
