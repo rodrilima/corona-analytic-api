@@ -6,7 +6,9 @@ API that generates information about coronavirus cases in the world and in the s
 
 ## How to use
 
-To use the API just use: https://api.coronaanalytic.com
+To use this API: https://api.coronaanalytic.com
+
+See the [Reference Examples](#Reference-examples)
 
 ## It's trustable?
 
@@ -21,6 +23,38 @@ If you have tips on how I can improve the code or have a job proposal for me, I'
 Email-me: limamdw@gmail.com
 
 Connect with me at [Linkedin](https://www.linkedin.com/in/rodrilima/)
+
+## Reference examples
+
+### Get all content
+
+```
+https://api.coronaanalytic.com
+```
+
+### Get Brazil content
+
+```
+https://api.coronaanalytic.com/brazil
+```
+
+### Get World content
+
+```
+https://api.coronaanalytic.com/world
+```
+
+### Get São Paulo content (uid: 35)
+
+```
+https://api.coronaanalytic.com/brazil/35
+```
+
+### Get Canada content (uid: CN)
+
+```
+https://api.coronaanalytic.com/world/CN
+```
 
 ## License
 
