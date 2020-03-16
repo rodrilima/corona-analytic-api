@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "cron": "^1.8.2",
-    "csvtojson": "^2.0.10",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-async-errors": "^3.1.1",
