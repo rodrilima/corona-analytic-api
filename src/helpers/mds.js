@@ -18,6 +18,7 @@ class mdsHelper {
         uid: value["uid"] || "",
         state: states[value["uid"]] || "",
         cases: value["cases"] || 0,
+        deaths: value["deaths"] || 0,
         suspects: value["suspects"] || 0,
         refuses: value["refuses"] || 0,
         broadcast: value["broadcast"] || false,
