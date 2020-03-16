@@ -2,7 +2,7 @@
 
 ## About this Project
 
-API that generates information about coronavirus cases in the world and in the states of Brazil.
+API that generates information about coronavirus (COVID-19) cases in the states of Brazil and other parts of the world
 
 ## How to use
 
@@ -16,7 +16,7 @@ All the information contained in this API is updated every hour with the data so
 
 ## About Me
 
-Hi. My name is Rodrigo Lima. I am a full stack programmer in Brazil. Thank you for supporting me seeing my project.
+Hi. My name is Rodrigo Lima. I am a full stack developer in Brazil. Thank you for supporting me seeing my project. Please, if you found the project interesting, I will be very grateful if you can give it a star.
 
 If you have tips on how I can improve the code or have a job proposal for me, I'll be happy if you can contact me.
 
