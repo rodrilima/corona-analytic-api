@@ -22,7 +22,7 @@ class mdsHelper {
 
                 history.push({
                     date: item.date,
-                    ...this.informationValueParser(item)
+                    ...this.informationValueParser(itemValue)
                 });
             });
         });
