@@ -4,6 +4,7 @@ require("express-async-errors");
 const routes = require("./routes");
 require("./database");
 const Youch = require("youch");
+const cors = require("cors");
 
 class App {
   constructor() {
@@ -14,6 +15,7 @@ class App {
   }
 
   middlewares() {
+    this.server.use(cors());
     this.server.use(
       express.urlencoded({
         extended: true
