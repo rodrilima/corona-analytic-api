@@ -2,7 +2,7 @@ module.exports = {
   11: "Rondônia (RO)",
   12: "Acre (AC)",
   13: "Amazonas (AM)",
-  14: "Roraima (PR)",
+  14: "Roraima (RR)",
   15: "Pará (PA)",
   16: "Amapá (AP)",
   17: "Tocantins (TO)",
