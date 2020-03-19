@@ -1,4 +1,5 @@
 const states = require("../config/states");
+const moment = require("moment");
 
 class mdsHelper {
     sourceParser(body) {
@@ -31,7 +32,10 @@ class mdsHelper {
                     date: item.date,
                     time: item.time,
                     date_iso: this.convertDateToISO8091(item.date, item.time),
-                    cases: itemValue.cases
+                    cases: itemValue.cases || 0,
+                    casesNew: itemValue.casesNew || 0,
+                    deaths: itemValue.deaths || 0,
+                    deathsNew: itemValue.deathsNew || 0
                 });
             });
         });
@@ -40,6 +44,7 @@ class mdsHelper {
         for (let worldUid of wordMap.keys()) {
             worldHistory.push({
                 uid: worldUid,
+                name: worldUid,
                 history: wordMap.get(worldUid) || []
             });
         }
@@ -83,7 +88,7 @@ class mdsHelper {
             values: []
         };
 
-        lastBrazilItem.values = lastBrazilItem.values.map(value => {
+        lastBrazilItem.values = values.map(value => {
             return {
                 uid: value.uid || "",
                 state: states[value.uid] || "",
