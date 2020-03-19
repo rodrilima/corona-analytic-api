@@ -6,13 +6,80 @@ API that generates information about coronavirus (COVID-19) cases in the states 
 
 ## How to use
 
-To use this API: https://api.coronaanalytic.com
-
-See the [Reference Examples](#Reference-examples)
+See the [Reference](#Reference)
 
 ## It's trustable?
 
 All the information contained in this API is updated every hour with the data source provided by the government of Brazil: https://saude.gov.br
+
+## Reference
+
+### Get all content
+
+```
+https://api.coronaanalytic.com
+```
+
+### Get Brazil last update
+
+```
+https://api.coronaanalytic.com/brazil
+```
+
+### Get World last update
+
+```
+https://api.coronaanalytic.com/world
+```
+
+### Get São Paulo last update (uid: 35) - Example
+
+```
+https://api.coronaanalytic.com/brazil/35
+```
+
+### Get China last update (uid: CN) - Example
+
+```
+https://api.coronaanalytic.com/world/CN
+```
+
+### Get all history updates
+
+```
+https://api.coronaanalytic.com/history
+```
+
+### Get Brazil history updates
+
+```
+https://api.coronaanalytic.com/history/brazil
+```
+
+### Get World history updates
+
+```
+https://api.coronaanalytic.com/history/world
+```
+
+### Get Minas Gerais History updates (uid: 31) - Example
+
+```
+https://api.coronaanalytic.com/history/brazil/31
+```
+
+## Showcase
+
+- [Corona Brazil Map](https://github.com/exploitmik/corona-brazil-map) by [@exploitmik](https://github.com/exploitmik)
+- https://levantelab.com.br/mapa_coronavirus by [@vitorhugosg](https://github.com/vitorhugosg)
+- [Covid-19 Brazil Tracker](https://github.com/emersonlaurentino/covid-19braziltracker) (Chrome extension) by [@emersonlaurentino](https://github.com/emersonlaurentino)
+- [AppCoronaVirus](https://github.com/abjona/AppCoronaVirus) (React Native) by [@abjona](https://github.com/abjona)
+- [Coronavírus - Rio Grande do Sul](https://github.com/leonardorpr/coronavirus-rs) (React) by [@leonardorpr](https://github.com/leonardorpr)
+
+## Collaborators
+
+- [@raphaelkieling](https://github.com/raphaelkieling)
+- [@johanpedroo](https://github.com/johanpedroo)
 
 ## About Me
 
@@ -23,62 +90,6 @@ If you have tips on how I can improve the code or have a job proposal for me, I'
 Email-me: limamdw@gmail.com
 
 Connect with me at [Linkedin](https://www.linkedin.com/in/rodrilima/)
-
-## Reference examples
-
-### Get all content
-
-```
-https://api.coronaanalytic.com
-```
-
-### Get Brazil content
-
-```
-https://api.coronaanalytic.com/brazil
-```
-
-### Get World content
-
-```
-https://api.coronaanalytic.com/world
-```
-
-### Get History content
-
-```
-https://api.coronaanalytic.com/history
-```
-
-### Get Brazil History content
-
-```
-https://api.coronaanalytic.com/history/brazil
-```
-
-### Get World History content
-
-```
-https://api.coronaanalytic.com/history/world
-```
-
-### Get São Paulo content (uid: 35)
-
-```
-https://api.coronaanalytic.com/brazil/35
-```
-
-### Get China content (uid: CN)
-
-```
-https://api.coronaanalytic.com/world/CN
-```
-
-### Get Minas Gerais History content
-
-```
-https://api.coronaanalytic.com/history/brazil/31
-```
 
 ## License
 
