@@ -9,6 +9,14 @@ class mds {
     });
     return response;
   }
+  async getHistory() {
+    const response = await mdsModel
+      .findOne({
+        _id: "5e6edad816ed1d6c5486f842"
+      })
+      .select({ history: 1 });
+    return response;
+  }
   save() {
     request(
       {

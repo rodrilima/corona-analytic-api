@@ -44,6 +44,24 @@ https://api.coronaanalytic.com/brazil
 https://api.coronaanalytic.com/world
 ```
 
+### Get History content
+
+```
+https://api.coronaanalytic.com/history
+```
+
+### Get Brazil History content
+
+```
+https://api.coronaanalytic.com/history/brazil
+```
+
+### Get World History content
+
+```
+https://api.coronaanalytic.com/history/world
+```
+
 ### Get São Paulo content (uid: 35)
 
 ```
@@ -54,6 +72,12 @@ https://api.coronaanalytic.com/brazil/35
 
 ```
 https://api.coronaanalytic.com/world/CN
+```
+
+### Get Minas Gerais History content
+
+```
+https://api.coronaanalytic.com/history/brazil/31
 ```
 
 ## License
