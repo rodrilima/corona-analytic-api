@@ -8,6 +8,7 @@
     "dev": "nodemon src/server.js"
   },
   "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
     "cors": "^2.8.5",
     "cron": "^1.8.2",
     "dotenv": "^8.2.0",
@@ -15,6 +16,7 @@
     "express-async-errors": "^3.1.1",
     "moment": "^2.24.0",
     "mongoose": "^5.9.4",
+    "puppeteer": "^2.1.1",
     "request": "^2.88.2",
     "youch": "^2.0.10"
   }
