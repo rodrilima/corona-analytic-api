@@ -18,7 +18,7 @@ class mds {
       .select({ history: 1 });
     return response;
   }
-  async getHistory() {
+  async getJournal() {
     const response = await mdsModel
       .findOne({
         _id: "5e6edad816ed1d6c5486f842"

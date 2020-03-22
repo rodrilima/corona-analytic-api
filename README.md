@@ -68,6 +68,18 @@ https://api.coronaanalytic.com/history/world
 https://api.coronaanalytic.com/history/brazil/31
 ```
 
+### Get Brazil journal updates
+
+```
+https://api.coronaanalytic.com/journal
+```
+
+### Get SP-Brazil journal updates
+
+```
+https://api.coronaanalytic.com/journal/SP
+```
+
 ## Showcase
 
 - [Corona Brazil Map](https://github.com/exploitmik/corona-brazil-map) by [@exploitmik](https://github.com/exploitmik)

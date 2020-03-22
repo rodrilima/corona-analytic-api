@@ -14,8 +14,7 @@ routes.get("/save", async (req, res) => {
 });
 
 routes.get("/journal", journalController.index);
-routes.get("/journal/:country", journalController.indexCountry);
-routes.get("/journal/:country/:uid", journalController.indexUid);
+routes.get("/journal/:state", journalController.indexState);
 
 routes.get("/history", historyController.index);
 routes.get("/history/:country", historyController.indexCountry);
