@@ -4,14 +4,14 @@ const coronaController = require("./app/controllers/coronaController");
 const historyController = require("./app/controllers/historyController");
 const journalController = require("./app/controllers/journalController");
 
-const mds = require("./libs/mds");
+// const mds = require("./libs/mds");
 
 routes.get("/", coronaController.index);
 
-routes.get("/save", async (req, res) => {
-  const response = await mds.save()
-  res.send(response);
-});
+// routes.get("/save", async (req, res) => {
+//   const response = await mds.save()
+//   res.send(response);
+// });
 
 routes.get("/journal", journalController.index);
 routes.get("/journal/:state", journalController.indexState);
