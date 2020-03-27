@@ -1,7 +1,8 @@
 const request = require("request");
 const mdsModel = require("../app/models/mds");
 const mdsHelper = require("../helpers/mds");
-const Scraping = require("../libs/Scraping")
+// const Scraping = require("../libs/Scraping")
+const G1Json = require("../libs/G1Json")
 
 class mds {
   async get() {
@@ -41,7 +42,7 @@ class mds {
     //     console.log(`Database updated at ${Date.now()}`);
     //   }
     // );
-    const journal = await Scraping.get();
+    const journal = await G1Json.get()
     if(!journal) return false
     return await mdsModel.updateOne(
       { _id: "5e6edad816ed1d6c5486f842" },
